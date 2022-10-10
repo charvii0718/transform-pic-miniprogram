@@ -53,7 +53,7 @@ Page({
         })
     },
     // 注册信息填写完毕回调
-    onClose() {
+    userRegister() {
         if (this.data.avatarUrl && this.data.nickname) {
             let cloudPath = this.data.avatarUrl.split('/')
             cloudPath = cloudPath[cloudPath.length - 1]
@@ -96,5 +96,8 @@ Page({
         this.setData({
             avatarUrl: avatarUrl,
         })
+        if (this.data.avatarUrl && this.data.nickname) {
+            this.userRegister()
+        }
     },
 })

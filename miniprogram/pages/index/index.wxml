@@ -1,6 +1,6 @@
 <!--index.wxml-->
 <view class="container">
-    <van-popup show="{{ showAuthorize }}" bind:close="onClose" position="bottom" round>
+    <van-popup show="{{ showAuthorize }}" bind:close="userRegister" position="bottom" round>
         <view class="user-authorize">
             <view class="user-authorize-title">请授权用户头像头像及昵称</view>
             
