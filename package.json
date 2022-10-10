@@ -1,5 +1,14 @@
 {
   "dependencies": {
-    "vant-weapp": "^0.5.29"
-  }
+    "@vant/weapp": "^1.10.5"
+  },
+  "name": "game01",
+  "version": "1.0.0",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }

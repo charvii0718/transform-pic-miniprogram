@@ -1,0 +1,16 @@
+<!--index.wxml-->
+<view class="container">
+    <van-popup show="{{ showAuthorize }}" bind:close="onClose" position="bottom" round>
+        <view class="user-authorize">
+            <view class="user-authorize-title">请授权用户头像头像及昵称</view>
+            
+            <button class="avatar-wrapper" open-type="chooseAvatar" bind:chooseavatar="onChooseAvatar">
+                <image class="user-avatar" src="{{avatarUrl}}"></image>
+            </button>
+            <view class="user-nickname">
+            <view class="user-nickname-label">昵称</view>
+            <input type="nickname" class="weui-input" placeholder="请输入昵称" model:value="{{nickname}}" />
+            </view>
+        </view>
+    </van-popup>
+</view>
