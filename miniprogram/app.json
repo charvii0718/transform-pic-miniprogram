@@ -1,12 +1,19 @@
 {
+    "entryPagePath": "pages/index/index",
+
     "pages": [
         "pages/index/index"
     ],
     "window": {
         "backgroundTextStyle": "light",
-        "navigationBarBackgroundColor": "#fff",
+        "navigationBarBackgroundColor": "#409EFF",
         "navigationBarTitleText": "Charvii",
-        "navigationBarTextStyle": "black"
+        "navigationBarTextStyle": "white",
+        "navigationStyle":"custom"
+    },
+    "networkTimeout": {
+        "request": 15000,
+        "downloadFile": 15000
     },
     "sitemapLocation": "sitemap.json"
 }

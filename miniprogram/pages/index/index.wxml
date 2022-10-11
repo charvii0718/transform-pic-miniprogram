@@ -1,5 +1,6 @@
 <!--index.wxml-->
 <view class="container">
+    <nav-bar navName="Charvii"></nav-bar>
     <van-popup show="{{ showAuthorize }}" bind:close="userRegister" position="bottom" round>
         <view class="user-authorize">
             <view class="user-authorize-title">请授权用户头像头像及昵称</view>

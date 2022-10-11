@@ -1,0 +1,7 @@
+<!--components/NavBar.wxml-->
+<view class="nav-container" style="height: {{statusBarHeight+navHeight}}px;">
+    <view class="status-bar" style="height: {{statusBarHeight}}px;"></view>
+    <view class="nav-bar" style="height: {{navHeight}}px;">
+        <text class="nav-name-text">{{navName}}</text>
+    </view>
+</view>
