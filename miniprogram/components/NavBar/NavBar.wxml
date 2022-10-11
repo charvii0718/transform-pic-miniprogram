@@ -5,3 +5,4 @@
         <text class="nav-name-text">{{navName}}</text>
     </view>
 </view>
+<view class="nav-placeholder" style="height: {{statusBarHeight+navHeight}}px;"></view>
