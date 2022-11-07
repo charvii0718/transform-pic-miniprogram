@@ -246,7 +246,7 @@ Page({
                     })
             } else {
                 wx.showToast({
-                    title: '画布中啥都没有呢',
+                    title: '画布中啥都没有呢﹒︠ᴗ﹒︡',
                     icon: "none",
                     mask: true,
                     duration: 1500

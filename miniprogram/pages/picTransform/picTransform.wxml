@@ -36,7 +36,7 @@
       </view>
     </view>
     <view style="width: {{isText? '300rpx': '0rpx'}};" class="text-input">
-      <input type="text" placeholder="不妨写点东西" class="input-block" confirm-type="done" bindblur="pixelTextChange" model:value="{{pixelText}}" />
+      <input type="text" placeholder="写点东西﹒︠ᴗ﹒︡" class="input-block" confirm-type="done" bindblur="pixelTextChange" model:value="{{pixelText}}" />
     </view>
   </view>
   

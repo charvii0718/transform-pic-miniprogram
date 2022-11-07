@@ -5,12 +5,24 @@ Page({
         openid: '',
         showDialog: false,
         showButton: false,
-        reasonText: ''
+        reasonText: '',
+        dialogHeight: "fit-content"
     },
     onLoad: function (options) {
         // console.log(+new Date());
-        this.getText()
         this.login()
+        this.getDialogHeight()
+        this.getText()
+    },
+    getDialogHeight() {
+        wx.getSystemInfo({
+            success:res=> {
+                let height = (res.screenHeight - 100) * 0.6
+                this.setData({
+                    dialogHeight: `${height}px`
+                })
+            }
+        })
     },
     getText() {
         wx.cloud.callFunction({
@@ -25,10 +37,11 @@ Page({
     },
     async login() {
         wx.showLoading({
-            title: '耐心等待...',
+            title: '请等待 ●__●',
             mask: true,
             complete: () => {
                 this.loginTimer = setTimeout(() => {
+                    console.log("我被执行了");
                     wx.hideLoading({
                         success: () => this.loginTimer = null
                     })
@@ -60,7 +73,7 @@ Page({
     userRegister() {
         if (this.data.avatarUrl && this.data.nickname) {
             wx.showLoading({
-                title: '耐心等待...',
+                title: '请等待 ●__●',
                 mask: true,
                 complete: () => {
                     this.registerTimer = setTimeout(() => {

@@ -3,7 +3,7 @@
     "projectname": "game01",
     "setting": {
         "compileHotReLoad": true,
-        "autoAudits": true,
+        "autoAudits": false,
         "urlCheck": true,
         "bigPackageSizeSupport": false
     },

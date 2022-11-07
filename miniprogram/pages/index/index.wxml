@@ -2,21 +2,26 @@
 <view style="height: 100%;">
     <common-box>
         <view class="user-authorize-title">Authorize</view>
-        <button class="avatar-wrapper" open-type="chooseAvatar" bind:chooseavatar="onChooseAvatar">
-            <image class="user-avatar" src="{{avatarUrl}}"></image>
-        </button>
-        <view class="user-nickname">
-            <view class="user-nickname-label">昵称</view>
-            <input type="nickname" class="weui-input" placeholder="授权昵称" model:value="{{nickname}}" bindblur="onNameChange" confirm-type="done" />
+        <view class="box-container">
+        <view class="avatar-box">
+            <button class="avatar-wrapper" open-type="chooseAvatar" bind:chooseavatar="onChooseAvatar">
+                <image class="user-avatar" src="{{avatarUrl}}"></image>
+            </button>
+            <view class="avatar-tips">
+                点击授权头像
+            </view>
+        </view>
+            <view class="user-nickname">
+                <view class="user-nickname-label">昵称</view>
+                <input type="nickname" class="weui-input" placeholder="授权昵称" model:value="{{nickname}}" bindblur="onNameChange" confirm-type="done" />
+            </view>
         </view>
     </common-box>
 </view>
 <my-button wx:if="{{showButton}}" openType="contact" text="似乎遇到了什么问题，需要联系我吗"></my-button>
 <my-dialog visible="{{showDialog}}" bindclose="onDialogClose">
-    <view class="text">
-    {{reasonText}}
-    </view>
-    <view class="notice">
-        点击任意处继续
+    <view style="height: {{dialogHeight}};" class="dialog-box">
+        <view class="text">{{reasonText}}</view>
+        <view class="notice">点击任意处继续</view>
     </view>
 </my-dialog>
