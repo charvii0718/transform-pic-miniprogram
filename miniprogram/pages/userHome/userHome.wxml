@@ -1,7 +1,7 @@
 <nav-bar navName="Contact"></nav-bar>
 <common-box>
 <view class="text">
-    任何问题或建议请联系我，最后祝您开心每一天
+{{notice}}
 </view>
 </common-box>
 <my-button openType="contact" text="plz contact me"></my-button>

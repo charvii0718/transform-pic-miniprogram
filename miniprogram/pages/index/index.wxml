@@ -14,9 +14,7 @@
 <my-button wx:if="{{showButton}}" openType="contact" text="似乎遇到了什么问题，需要联系我吗"></my-button>
 <my-dialog visible="{{showDialog}}" bindclose="onDialogClose">
     <view class="text">
-        事情的起因是朋友抖音@了我两个C语言画爱心的视频，恍惚间仿佛回到了大学。
-        时过境迁，我已经记不清C语言的语法了，但我仍有兴趣做个类似的东西。
-        于是我在微信上挂载了这个小程序，如果你也无聊，不妨来看看，这其实没那么无聊。
+    {{reasonText}}
     </view>
     <view class="notice">
         点击任意处继续

@@ -4,11 +4,24 @@ Page({
         nickname: "",
         openid: '',
         showDialog: false,
-        showButton: false
+        showButton: false,
+        reasonText: ''
     },
     onLoad: function (options) {
         // console.log(+new Date());
+        this.getText()
         this.login()
+    },
+    getText() {
+        wx.cloud.callFunction({
+            name: "getText",
+            data: { type: "reason" },
+            success: res => {
+                this.setData({
+                    reasonText: res.result.text
+                })
+            }
+        })
     },
     async login() {
         wx.showLoading({

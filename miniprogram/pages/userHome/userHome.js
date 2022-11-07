@@ -5,14 +5,27 @@ Page({
      * 页面的初始数据
      */
     data: {
-
+        notice: ""
     },
 
     /**
      * 生命周期函数--监听页面加载
      */
     onLoad(options) {
-
+        this.getText()
+    },
+    getText() {
+        wx.cloud.callFunction({
+            name:"getText",
+            data: {
+                type: "contact-notice"
+            },
+            success: res => {
+                this.setData({
+                    notice: res.result.text
+                })
+            }
+        })
     },
 
     /**
