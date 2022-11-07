@@ -1,0 +1,9 @@
+<!--components/NavBar.wxml-->
+<view class="nav-container" style="height: {{statusBarHeight+navHeight}}px;">
+    <view class="status-bar" style="height: {{statusBarHeight}}px;"></view>
+    <view class="nav-bar" style="height: {{navHeight}}px;" bindtap="havefun">
+        <text class="nav-name-text">{{navName}}</text>
+    </view>
+</view>
+<!-- <view class="nav-placeholder" style="height: {{statusBarHeight+navHeight}}px;background-color: red;"></view> -->
+<view class="nav-placeholder" style="height:{{height}}px;"></view>

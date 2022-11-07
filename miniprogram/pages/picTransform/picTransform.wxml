@@ -1,0 +1,44 @@
+<nav-bar navName="Charvii"></nav-bar>
+<view class="pic-transform-container">
+  <common-box>
+    <!-- <view class="canvas-container"> -->
+    <view class="canvas-container-header">
+      <text class="header-title">Charvii</text>
+      <view class="oprate-box">
+        <text class="icon-minimum" bindtap="havefun"></text>
+        <text class="icon-maximum"></text>
+        <text class="icon-close" bindtap="byebye"></text>
+      </view>
+    </view>
+    <canvas class="canvas" type="2d" id="canvas" canvas-id="canvas" bindtap="chooseImage" style="height: {{canvasHeight}}rpx;">
+      <view class="canvas-inner" wx:if="{{!originalImage.path}}">
+        点击上传/更换图片O_o
+      </view>
+    </canvas>
+    <!-- </view> -->
+  </common-box>
+
+
+  <my-slider width="600" class="slider-container" max="6" min="30" disabled="{{!canOprate}}" initValue="{{pixelSize}}" bindsliderchange="pixelSizeChange"></my-slider>
+  
+  
+  <view class="toggle-model-container">
+    <view class="toggle-model">
+      <view data-istext="{{false}}" class="model-box {{isText?'unchecked-model':'checked-model'}}" bindtap="toggleModel">
+        <view class="first-box-inner box-inner">
+          type A
+        </view>
+      </view>
+      <view data-istext="{{true}}" class="model-box {{isText?'checked-model':'unchecked-model'}}" bindtap="toggleModel">
+        <view class="second-box-inner box-inner">
+          type B
+        </view>
+      </view>
+    </view>
+    <view style="width: {{isText? '300rpx': '0rpx'}};" class="text-input">
+      <input type="text" placeholder="不妨写点东西" class="input-block" confirm-type="done" bindblur="pixelTextChange" model:value="{{pixelText}}" />
+    </view>
+  </view>
+  
+  <my-button text="保存" bindtap="downloadCanvasImage"></my-button>
+</view>

@@ -1,0 +1,32 @@
+var max = 0
+var startPoint = 0
+var lastLeft = ''
+function touchstart(event, ins) {
+    if (event.target.dataset.disabled) {
+        return
+    }
+    if (lastLeft === '') {
+        lastLeft = event.target.dataset.firstprogress
+    }
+    var touch = event.touches[0] || event.changedTouches[0]
+    startPoint = touch.pageX
+}
+function touchmove(event, ins) {
+    if (event.target.dataset.disabled) {
+        return
+    }
+    !max && (max = event.target.dataset.max)
+    var touch = event.touches[0] || event.changedTouches[0]
+    var pageX = touch.pageX
+    var left = pageX - startPoint + lastLeft
+    left = (left > max ? max : left)  < 0 ? 0 : left
+    startPoint = pageX
+    lastLeft = left
+    ins.selectComponent('.slider-progress-line').setStyle({
+        "width": left + "px"
+    })
+}
+module.exports = {
+    touchstart: touchstart,
+    touchmove: touchmove,
+}

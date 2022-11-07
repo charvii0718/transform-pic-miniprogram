@@ -1,0 +1,9 @@
+{
+    "usingComponents": {
+        "nav-bar": "../../components/NavBar/NavBar",
+        "my-slider": "../../components/MySlider/MySlider",
+        "my-button": "../../components/MyButton/MyButton",
+        "common-box": "../../components/CommonBox/CommonBox"
+    },
+    "navigationStyle": "custom"
+}

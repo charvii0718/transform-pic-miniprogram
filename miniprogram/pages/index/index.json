@@ -1,0 +1,10 @@
+{
+    "usingComponents": {
+        "nav-bar": "../../components/NavBar/NavBar",
+        "my-dialog": "../../components/MyDialog/MyDialog",
+        "my-button": "../../components/MyButton/MyButton",
+        "common-box": "../../components/CommonBox/CommonBox"
+    },
+    "navigationStyle": "custom"
+
+}

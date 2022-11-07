@@ -1,5 +1,20 @@
 {
-  "dependencies": {
-    "vant-weapp": "^0.5.29"
-  }
+  "name": "charvii",
+  "version": "1.0.0",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/charvii0718/transform-pic-miniprogram.git"
+  },
+  "bugs": {
+    "url": "https://github.com/charvii0718/transform-pic-miniprogram/issues"
+  },
+  "homepage": "https://github.com/charvii0718/transform-pic-miniprogram#readme",
+  "description": ""
 }

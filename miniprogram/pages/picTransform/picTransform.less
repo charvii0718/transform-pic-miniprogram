@@ -1,0 +1,201 @@
+.pic-transform-container {
+  padding: 20rpx;
+
+  .canvas-container-header {
+    color: rgba(0, 0, 0, 0.8);
+    background-color: #fff;
+    padding: 10rpx;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+
+    // .header-title {
+    //     color: var(--system-color);
+    // }
+
+    // .oprate-box {
+    //     color: #000;
+    // }
+  }
+
+  .canvas {
+    // margin: auto;
+    width: 100%;
+    background-color: #f6f6f6;
+    border-end-start-radius: 0 0 20rpx 20rpx;
+
+    .canvas-inner {
+      padding: 100rpx;
+      text-align: center;
+      font-size: 14px;
+      color: rgba(0, 0, 0, 0.8);
+    }
+  }
+
+
+  .style-switch-container {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    margin: auto;
+    font-weight: bold;
+
+    // switch原始进度条
+    .wx-switch-input {
+      border-radius: 10rpx;
+      //  background-color: black;
+      height: 20px;
+    }
+
+    // switch 为false时，显露的部分
+    .wx-switch-input::before {
+      background-color: green;
+      width: 100rpx !important;
+      height: 20px !important;
+      border-radius: 10rpx;
+    }
+
+    // 滑块
+    .wx-switch-input::after {
+      margin: -1px;
+      border-radius: 10rpx;
+      // background-color: red;
+      width: 62rpx;
+      height: 21px;
+      // border: 2px solid #000;
+    }
+
+    .switch-label {
+      padding: 0 20rpx;
+    }
+  }
+
+  .on-off-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+
+    .on-off {
+      width: 120rpx;
+      height: 56rpx;
+      border-radius: 50rpx;
+      background: linear-gradient(to right, #4b4b4b, #111111);
+      display: flex;
+      transition: all 1s;
+
+      .on-off-inner {
+        color: red;
+        width: 50%;
+        height: 100%;
+        text-align: center;
+        line-height: 56rpx;
+      }
+
+      .on-off-on {
+        border-radius: 50rpx 0 0 50rpx;
+        box-shadow: inset 10rpx 0 10rpx 0 #111111;
+        border-right: 1px solid yellow;
+      }
+
+      .on-off-off {
+        border-radius: 0 50rpx 50rpx 0;
+        box-shadow: inset -10rpx 0 10rpx 0 #4b4b4b;
+      }
+    }
+
+    .off-input {
+      height: 100%;
+      transition: all 1s;
+    }
+
+    .transform-button {
+      background-color: #b8f1cc;
+      // border: 1px solid rgba(0, 0, 0, 0.3);
+      margin: 50rpx;
+      padding: 20rpx;
+      text-align: center;
+
+      width: 200rpx;
+      border-radius: 10rpx;
+    }
+  }
+
+  .defual-text {
+    // width: 50px;
+    // height: 50px;
+    background: red;
+    transition: width 1s, height 1s;
+    //   &:hover{
+    //   width: 100px;
+    //   height: 100px;
+    //   }
+  }
+
+  .toggle-model-container {
+    // margin: auto;
+    // width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    .toggle-model {
+      display: flex;
+      overflow: hidden;
+      border-radius: 40rpx;
+      border: 2px solid var(--system-color);
+
+      .model-box {
+        font-size: 14px;
+        font-weight: bold;
+        transition: all 500ms ease-out;
+
+        .first-box-inner {
+          border-radius: 0 20rpx 0 0;
+        }
+
+        .second-box-inner {
+          border-radius: 0 0 0 20rpx
+        }
+
+        .box-inner {
+          padding: 10rpx 20rpx;
+          transition: all 500ms ease-out;
+        }
+      }
+
+      .unchecked-model {
+        background-color: var(--system-color);
+
+        .box-inner {
+          color: rgba(0, 0, 0, .8);
+          background-color: #fff;
+          border: 1px solid #fff;
+        }
+      }
+
+      .checked-model {
+        background-color: #fff;
+
+        .box-inner {
+          color: #fff;
+          background-color: var(--system-color);
+          border: 1px solid var(--system-color);
+        }
+      }
+    }
+
+    .text-input {
+      color: rgba(0, 0, 0, 0.8);
+      font-size: 16px;
+      transition: width 500ms ease-out;
+
+      .input-block {
+        height: fit-content;
+        padding: 10rpx 0 10rpx 40rpx;
+      }
+    }
+  }
+
+}

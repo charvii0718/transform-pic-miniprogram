@@ -1,0 +1,21 @@
+button::after {
+    border: none;
+    margin: 0;
+    padding: 0;
+ }
+ .contact-button{
+     width: fit-content;
+     margin: 50rpx auto;
+    background-color: #fff;
+    color: var(--system-color);
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.2;
+    padding: 16rpx 40rpx;
+    text-align: center;
+    border-radius: 40rpx;
+ }
+ .cantact-button-hover {
+     transform: scale(0.95,0.95);
+     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1) ;
+ }

@@ -1,0 +1,1 @@
+<button open-type='{{openType}}' class="contact-button" hover-class="cantact-button-hover" catchtouchmove='catchtouchmove'>{{text}}</button>

@@ -1,0 +1,146 @@
+.pic-transform-container {
+  padding: 20rpx;
+}
+.pic-transform-container .canvas-container-header {
+  color: rgba(0, 0, 0, 0.8);
+  background-color: #fff;
+  padding: 10rpx;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+.pic-transform-container .canvas {
+  width: 100%;
+  background-color: #f6f6f6;
+  border-end-start-radius: 0 0 20rpx 20rpx;
+}
+.pic-transform-container .canvas .canvas-inner {
+  padding: 100rpx;
+  text-align: center;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.8);
+}
+.pic-transform-container .style-switch-container {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  margin: auto;
+  font-weight: bold;
+}
+.pic-transform-container .style-switch-container .wx-switch-input {
+  border-radius: 10rpx;
+  height: 20px;
+}
+.pic-transform-container .style-switch-container .wx-switch-input::before {
+  background-color: green;
+  width: 100rpx !important;
+  height: 20px !important;
+  border-radius: 10rpx;
+}
+.pic-transform-container .style-switch-container .wx-switch-input::after {
+  margin: -1px;
+  border-radius: 10rpx;
+  width: 62rpx;
+  height: 21px;
+}
+.pic-transform-container .style-switch-container .switch-label {
+  padding: 0 20rpx;
+}
+.pic-transform-container .on-off-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.pic-transform-container .on-off-container .on-off {
+  width: 120rpx;
+  height: 56rpx;
+  border-radius: 50rpx;
+  background: linear-gradient(to right, #4b4b4b, #111111);
+  display: flex;
+  transition: all 1s;
+}
+.pic-transform-container .on-off-container .on-off .on-off-inner {
+  color: red;
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  line-height: 56rpx;
+}
+.pic-transform-container .on-off-container .on-off .on-off-on {
+  border-radius: 50rpx 0 0 50rpx;
+  box-shadow: inset 10rpx 0 10rpx 0 #111111;
+  border-right: 1px solid yellow;
+}
+.pic-transform-container .on-off-container .on-off .on-off-off {
+  border-radius: 0 50rpx 50rpx 0;
+  box-shadow: inset -10rpx 0 10rpx 0 #4b4b4b;
+}
+.pic-transform-container .on-off-container .off-input {
+  height: 100%;
+  transition: all 1s;
+}
+.pic-transform-container .on-off-container .transform-button {
+  background-color: #b8f1cc;
+  margin: 50rpx;
+  padding: 20rpx;
+  text-align: center;
+  width: 200rpx;
+  border-radius: 10rpx;
+}
+.pic-transform-container .defual-text {
+  background: red;
+  transition: width 1s, height 1s;
+}
+.pic-transform-container .toggle-model-container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.pic-transform-container .toggle-model-container .toggle-model {
+  display: flex;
+  overflow: hidden;
+  border-radius: 40rpx;
+  border: 2px solid var(--system-color);
+}
+.pic-transform-container .toggle-model-container .toggle-model .model-box {
+  font-size: 14px;
+  font-weight: bold;
+  transition: all 500ms ease-out;
+}
+.pic-transform-container .toggle-model-container .toggle-model .model-box .first-box-inner {
+  border-radius: 0 20rpx 0 0;
+}
+.pic-transform-container .toggle-model-container .toggle-model .model-box .second-box-inner {
+  border-radius: 0 0 0 20rpx;
+}
+.pic-transform-container .toggle-model-container .toggle-model .model-box .box-inner {
+  padding: 10rpx 20rpx;
+  transition: all 500ms ease-out;
+}
+.pic-transform-container .toggle-model-container .toggle-model .unchecked-model {
+  background-color: var(--system-color);
+}
+.pic-transform-container .toggle-model-container .toggle-model .unchecked-model .box-inner {
+  color: rgba(0, 0, 0, 0.8);
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+.pic-transform-container .toggle-model-container .toggle-model .checked-model {
+  background-color: #fff;
+}
+.pic-transform-container .toggle-model-container .toggle-model .checked-model .box-inner {
+  color: #fff;
+  background-color: var(--system-color);
+  border: 1px solid var(--system-color);
+}
+.pic-transform-container .toggle-model-container .text-input {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 16px;
+  transition: width 500ms ease-out;
+}
+.pic-transform-container .toggle-model-container .text-input .input-block {
+  height: fit-content;
+  padding: 10rpx 0 10rpx 40rpx;
+}

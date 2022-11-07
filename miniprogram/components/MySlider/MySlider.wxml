@@ -1,0 +1,15 @@
+<wxs module="wxs" src="./MySlider.wxs"></wxs>
+<view class="my-slider-container" style=" width: {{sliderWidth}}px;" catchtouchmove='catchtouchmove' >
+    <view class="slider-background">
+        <view class="slider-progress-line" style="width: {{firstProgress}}px;">
+            <view class="slider-block"
+                data-disabled="{{disabled}}"
+                data-firstprogress="{{firstProgress}}"
+                data-max="{{sliderWidth}}"
+                bindtouchstart="{{wxs.touchstart}}"
+                bindtouchmove="{{wxs.touchmove}}"
+                bindtouchend='sliderChange'
+            ></view>
+        </view>
+    </view>
+</view>
