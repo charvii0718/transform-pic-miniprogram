@@ -1,0 +1,4 @@
+
+<view class="common-box">
+    <slot></slot> 
+</view>

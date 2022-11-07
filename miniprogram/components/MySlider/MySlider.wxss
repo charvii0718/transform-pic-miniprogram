@@ -1,0 +1,28 @@
+.my-slider-container {
+  margin: auto;
+  padding: 100rpx 0;
+}
+.my-slider-container .slider-background {
+  height: 20rpx;
+  width: 100%;
+  border-radius: 10rpx;
+  background-color: #eee;
+  display: flex;
+}
+.my-slider-container .slider-background .slider-progress-line {
+  position: relative;
+  background: linear-gradient(to right, #fff, var(--system-color));
+  box-sizing: content-box;
+  width: 0;
+  height: 100%;
+  border-radius: inherit;
+}
+.my-slider-container .slider-background .slider-progress-line .slider-block {
+  position: absolute;
+  right: -25rpx;
+  top: calc(50% - 25rpx);
+  background-color: #3478f6;
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 50%;
+}

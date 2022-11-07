@@ -4,6 +4,8 @@
     "cloudfunctionRoot": "cloudfunctions/",
     "compileType": "miniprogram",
     "setting": {
+        "ignoreDevUnusedFiles": false,
+        "ignoreUploadUnusedFiles": false,
         "coverView": true,
         "es6": true,
         "postcss": true,
@@ -22,7 +24,7 @@
             "disablePlugins": [],
             "outputPath": ""
         },
-        "ignoreUploadUnusedFiles": true
+        "uglifyFileName": true
     },
     "condition": {},
     "editorSetting": {
@@ -33,5 +35,6 @@
         "ignore": [],
         "include": []
     },
-    "appid": "wxa4ae15e47c1a534c"
+    "appid": "wxa4ae15e47c1a534c",
+    "cloudfunctionTemplateRoot": "cloudfunctionTemplate/"
 }

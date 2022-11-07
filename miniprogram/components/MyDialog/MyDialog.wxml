@@ -1,0 +1,7 @@
+<view class="mask" wx:if="{{visible}}" catchtouchmove='nofunction' bindtap="closeDialog">
+  <view class="dialog">
+    <common-box>
+    <slot></slot>
+    </common-box>
+  </view>
+</view>

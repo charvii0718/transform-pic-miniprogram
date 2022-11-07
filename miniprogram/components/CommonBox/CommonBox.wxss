@@ -1,0 +1,9 @@
+.common-box {
+  width: 600rpx;
+  min-height: 200rpx;
+  margin: auto;
+  background-color: #fff;
+  border-radius: 20rpx;
+  box-shadow: 10rpx 10rpx 10rpx 0 rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}

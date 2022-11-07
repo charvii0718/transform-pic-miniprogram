@@ -1,8 +1,5 @@
 {
-  "dependencies": {
-    "@vant/weapp": "^1.10.5"
-  },
-  "name": "game01",
+  "name": "charvii",
   "version": "1.0.0",
   "main": ".eslintrc.js",
   "scripts": {
@@ -10,5 +7,14 @@
   },
   "author": "",
   "license": "ISC",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/charvii0718/transform-pic-miniprogram.git"
+  },
+  "bugs": {
+    "url": "https://github.com/charvii0718/transform-pic-miniprogram/issues"
+  },
+  "homepage": "https://github.com/charvii0718/transform-pic-miniprogram#readme",
   "description": ""
 }

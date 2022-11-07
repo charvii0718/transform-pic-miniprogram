@@ -4,7 +4,8 @@
     "setting": {
         "compileHotReLoad": true,
         "autoAudits": true,
-        "urlCheck": false
+        "urlCheck": true,
+        "bigPackageSizeSupport": false
     },
-    "libVersion": "2.24.7"
+    "libVersion": "2.27.1"
 }

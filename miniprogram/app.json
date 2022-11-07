@@ -1,15 +1,32 @@
 {
-    "entryPagePath": "pages/index/index",
-
+    "lazyCodeLoading":"requiredComponents",
     "pages": [
-        "pages/index/index"
+        "pages/index/index",
+        "pages/picTransform/picTransform",
+        "pages/userHome/userHome"
     ],
     "window": {
-        "backgroundTextStyle": "light",
+        "backgroundTextStyle": "dark",
         "navigationBarBackgroundColor": "#409EFF",
         "navigationBarTitleText": "Charvii",
-        "navigationBarTextStyle": "white",
+        "navigationBarTextStyle": "black",
+        "backgroundColor": "#000",
         "navigationStyle":"custom"
+    },
+    "tabBar": {
+        "list": [{
+                "pagePath": "pages/picTransform/picTransform",
+                "text": "",
+                "iconPath": "images/picture.png",
+                "selectedIconPath": "images/picture_selected.png"
+            },
+            {
+                "pagePath": "pages/userHome/userHome",
+                "text": "",
+                "iconPath": "images/home.png",
+                "selectedIconPath": "images/home_selected.png"
+            }
+        ]
     },
     "networkTimeout": {
         "request": 15000,

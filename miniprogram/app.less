@@ -1,12 +1,17 @@
+@import (css) "style/font.wxss";
 page {
+    // 系统背景色
+    --system-bgc: #f5f6f9;
     // 系统主题色
-    --system-theme: #409EFF;
+    --system-color: #3478f6;
+    // 字体大小
+    // 20、18、16、14、13、12 （14号为标准字号，nav-head 为16号字体）
     // 边框颜色
     --border-color-base: #DCDFE6;
     --border-color-light: #E4E7ED;
     --border-color-lighter: #EBEEF5;
     --border-color-extra-light: #F2F6FC;
-    // 文本颜色
+    // 文本颜色1
     --color-text-primary: #303133;
     --color-text-regular: #606266;
     --color-text-secondary: # #909399;
@@ -21,11 +26,27 @@ page {
     --normal-avatar: url(https://mmbiz.qpic.cn/mmbiz/icTdbqWNOwNRna42FI242Lcia07jQodd2FJGIYQfG0LAJGFxM4FbnQP6yfMxBgJ0F3YRqJCJ1aPAK2dQagdusBZg/0);
     // 标题
     --common-title-icon-color: rgb(29, 155, 240);
+    
+    // 初始化Page对象
+    font-size: 14px;
+    background-color: var(--system-bgc);
 }
 
 // 初始化标签
-botton view i text input {
+botton,view,i,text,input {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+.cantact-button-hover {
+    //  background-color: #;
+     transform: scale(0.95,0.95);
+     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1) ;
+ }
+ 
+ .text {
+    text-indent: 2em;
+    padding: 50rpx;
+    line-height: 1.5;
+    letter-spacing: 1px;
+  }

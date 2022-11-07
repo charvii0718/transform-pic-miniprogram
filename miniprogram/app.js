@@ -15,7 +15,8 @@ App({
             // 云函数-云环境初始化
             // const cloud = require('wx-server-sdk')
             // cloud.init({
-            //     env: cloud.DYNAMIC_CURRENT_ENV
+            //     env: cloud.DYNAMIC_CURRENT_ENV,
+            //     traceUser: true
             // })
         }
     },
